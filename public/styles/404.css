@@ -1,0 +1,16 @@
+html, body {
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+h1, h2, h4 {
+	display: inline-block;
+	align-items: center;
+	text-align: center;
+}
+
+h1 {
+	font-size: 4em;
+}

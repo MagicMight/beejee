@@ -1,0 +1,56 @@
+/* .container-fluid {
+	outline: 1px solid black !important;
+} */
+
+.sortpanel span {
+	display: none;
+}
+.taskitem {
+	min-height: 15em;
+}
+.taskitem .textarea {
+	resize: none;
+	width: 100%;
+	height: 100%;
+	height: 15em;
+	align-self: end;
+	background-color: #fff !important;
+	overflow-x: hidden;
+    overflow-wrap: break-word;
+    padding: .4em;
+}
+
+.taskitem > .row:first-child {
+	min-height: 4em;
+}
+.taskitem > .row:first-child > div {
+	align-self: center;
+}
+.taskitem .data-field,
+.taskitem .data-field small {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 100%;
+}
+
+.taskitem:not(.complete)::before{
+	display: block;
+	width: 100%;
+	content: 'Не выполнено';
+	color: rgb(240, 43, 8);
+	border-bottom: 1px dashed rgb(240, 43, 8);
+}
+
+.taskitem.complete::before {
+	display: block;
+	width: 100%;
+	content: 'Выполнено';
+	color: rgb(144, 238, 144);
+	border-bottom: 1px dashed rgb(144, 238, 144);
+}
+.taskitem.edited .textarea::before {
+	display: block;
+	width: 100%;
+	content: 'Отредактировано администратором';
+	color: rgb(144, 170, 144);
+}

@@ -1,0 +1,9 @@
+/* .taskitem,
+.taskitem div {
+	outline: 1px solid black;
+} */
+
+
+.taskitem .content-row .textarea {
+	min-height: 20em;
+}
